@@ -18,15 +18,29 @@
                 <li><a href = "about.html">About</a></li>
                 <li><a href = "contact.html">Contact Us</a></li>
                 <li><a href = "sign.html">SignIn/SignUp</a></li>
+                
             </ul>
             </div>
         </nav> 
+        <style>
+            h2 {
+              color: blue;
+              font-family: verdana;
+            
+            }
+            p {
+              color: red;
+              font-family: courier;
+              font-size: 160%;
+            }
+            </style>
 </head>
     <body>
         
         <section>
-            <h2 text-align= "center">Welcome to WCA Hub</h2>
-            <img src="book01.jpeg" alt="Pile of Books">
+            <h2 style="text-align:center;">Welcome to WCA Hub  <input id="searchbar" onkeyup="search_projects()" type="text"
+                name="search" placeholder="Search projects.."></h2>
+                        <img src="book01.jpeg" alt="Pile of Books" style="width:1200px;height:300px;">
         </section>
         <footer>WCA HUB | Copyright &copy; 2023</footer>
     </body>

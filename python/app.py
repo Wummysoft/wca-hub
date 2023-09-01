@@ -1,6 +1,6 @@
 #!/bin/env python3
 
-from flask import Flask, render_template
+from flask import Flask, render_html
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 def index():
 
-    return render_template('index.html')
+    return render_html('index.html')
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8080)
