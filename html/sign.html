@@ -28,22 +28,34 @@
             <h4>Kindly input your username & password below to SignIn 
                 or
                 simple SignUp by inputting your details</h4>
-            <form>
+                
+            <frame action="/SignIn.php">
                 <div class="SignIn">
-                    <h6>SignIn</h6>
-                  <label>username<input type="text" name= "username"></label>
-                  <label>Password<input type="password" name= "password"></label>
-                  <label>Submit<input type="button" name="submit"></label>
+                    <fieldset>
+                  <legend>SignIn</legend>  
+                  <label for ="username">username:</label><br>
+                  <input type ="text" id ="username" value="wca"><br>
+                  <label for ="password">Password:</label><br>
+                  <input type="password" id = "password">
+                  <input type="submit" value="Submit">
+                </fieldset>
                 </div>
-            </form>
-            <form>
+            </frame>
+            <frame action="/SignUp.php">
                 <div class="SignUp">
-                    <h6>SignUp</h6>
-                    <label>First Name<input type="text" name="first name"></label>
-                    <label>Last Name<input type="text" name= "last name"></label>
-                    <label>Username<input type="text" name= "username"></label>
-                    <label>Password<input type="text" name="password"></label>
-                    <label>Submit<input type="button" name="submit"></label>
+                    <fieldset>
+
+                    <legend>SignUp</legend>
+                    <label for ="fname">First Name:</label><br>
+                    <input type="text" id ="fname" name ="fname"><br>
+                    <label for ="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for ="username">Username:</label><br>
+                    <input type="text" id ="username" name="username"><br>
+                    <label for ="password">Password:</label><br>
+                    <input type="password" id ="password"></label>
+                    <input type="submit" value="Submit">
+                </fieldset>
                 </div>
             </form>
         </section>

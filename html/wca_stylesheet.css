@@ -28,7 +28,7 @@ header {
         margin-right: 10px;
         }
 section {
-    background: linear-gradient(to right, rgb(201, 220, 176), rgb(232, 236, 232));
+    background-color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     color: rgb(59, 54, 36);
@@ -43,9 +43,9 @@ section {
         }
 }
 body{
-    background-color:silver;
+    background-color:white;
     h2{
-        color:aquamarine;
+        color:rgb(134, 171, 60);
         }
 }
     footer {
