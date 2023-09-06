@@ -20,6 +20,10 @@
             </ul>
             </div>
         </nav>    
+        <script>
+            var todays_date= new Date();
+        document.write(todays_date);
+        </script>
 </head>
     <body>
         
@@ -28,7 +32,7 @@
                 or
                 simple SignUp by inputting your details ...</h4>
                 
-            <frame action="/SignIn.php">
+            <frame name= "SignIn" action="/SignIn.php">
                 <div class="SignIn">
                     <fieldset>
                   <legend>SignIn</legend>  
@@ -36,11 +40,16 @@
                   <input type ="text" id ="username" value="wca"><br>
                   <label for ="password">Password:</label><br>
                   <input type="password" id = "password">
-                  <input type="submit" value="Submit">
+                  <button onclick="showAlert()"id =SignIn>SignIn</button>
+                  <script>
+                      function showAlert(){
+                          alert("Successful!");
+                      }
+                  </script>    
                 </fieldset>
                 </div>
             </frame>
-            <frame action="/SignUp.php">
+            <frame name="SignUp" action="/SignUp.php">
                 <div class="SignUp">
                     <fieldset>
 
@@ -53,7 +62,13 @@
                     <input type="text" id ="username" name="username"><br>
                     <label for ="password">Password:</label><br>
                     <input type="password" id ="password"></label>
-                    <input type="submit" value="Submit">
+                    <button onclick="showAlert()"id =SingUp>SignUp</button>
+                        <script>
+                            function showAlert(){
+                                alert("Successful!");
+                                }
+                        </script>    
+
                 </fieldset>
                 </div>
             </form>

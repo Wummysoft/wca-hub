@@ -33,6 +33,10 @@
               font-size: 80%;
             }
             </style>
+            <script>
+                var todays_date= new Date();
+            document.write(todays_date);
+            </script>
 </head>
     <body>
         
@@ -41,7 +45,7 @@
                 name="search" placeholder="Search projects.."></h2>
                         <img src="book01.jpeg" alt="Pile of Books" style="width:1000px;height:100px;">
                         <h5>Recent Research and Projects</h5>
-                        <table table name ="Recent-Upload">
+                        <table name ="Recent-Upload">
                             <tr>
                                 <th>S/N</th>
                                 <th>Date</th>
@@ -69,8 +73,13 @@
                             <input type= "button" value="browser"><br>
                             <br>
                             <label for="upload" >Click the next button to Upload your file(s) </label>
-                            <input type="submit" value="Upload">
-                            </fieldset>
+                            <button onclick="showAlert()"id =Upload>Upload</button>
+                        <script>
+                            function showAlert(){
+                                alert("File(s) Uploaded Successfully!");
+                            }
+                        </script>    
+                        </fieldset>
                             
                         </frame>
                         <h3 style="text-align: center";> Thank you for your contribution!</h3>
