@@ -14,7 +14,6 @@
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href ="up-download.html">Upload/Download</a></li>
                 <li><a href = "about.html">About</a></li>
                 <li><a href = "contact.html">Contact Us</a></li>
                 <li><a href = "sign.html">SignIn/SignUp</a></li>
@@ -31,7 +30,7 @@
             p {
               color: red;
               font-family: courier;
-              font-size: 160%;
+              font-size: 80%;
             }
             </style>
 </head>
@@ -40,9 +39,9 @@
         <section>
             <h2 style="text-align:center;">Welcome to WCA Hub <input id="searchbar" onkeyup="search_projects()" type="text"
                 name="search" placeholder="Search projects.."></h2>
-                        <img src="book01.jpeg" alt="Pile of Books" style="width:1200px;height:100px;">
+                        <img src="book01.jpeg" alt="Pile of Books" style="width:1000px;height:100px;">
                         <h5>Recent Research and Projects</h5>
-                        <table>
+                        <table table name ="Recent-Upload">
                             <tr>
                                 <th>S/N</th>
                                 <th>Date</th>
@@ -51,13 +50,31 @@
                                 <th>Remark</th>
                             </tr>
                             <tr>   
-                                <td>01</td> 
+                                <td>01</td>
                                 <td>01012023</td>
                                 <td>wca</td>
                                 <td>wc-hub</td>
                                 <td>Project Prototype</td>
                             </tr>
                         </table>
+                        <br>
+                        <br>
+                        <br>
+                        <h4>Kindly upload and download projects or research file(s) here!</h4>
+                        <frame>
+                            <fieldset>
+                                <legend>Kindly Upload your Research Files or Folder</legend>
+                                <label for="browse">Browse to upload a file/folder</label>
+                                <input type="search" value="Search">
+                            <input type= "button" value="browser"><br>
+                            <br>
+                            <label for="upload" >Click the next button to Upload your file(s) </label>
+                            <input type="submit" value="Upload">
+                            </fieldset>
+                            
+                        </frame>
+                        <h3 style="text-align: center";> Thank you for your contribution!</h3>
+                        
         </section>
         
         <footer>WCA HUB | Copyright &copy; 2023</footer>
