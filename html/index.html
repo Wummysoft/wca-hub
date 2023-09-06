@@ -68,17 +68,23 @@
                         <frame>
                             <fieldset>
                                 <legend>Kindly Upload your Research Files or Folder</legend>
-                                <label for="browse">Browse to upload a file/folder</label>
-                                <input type="search" value="Search">
-                            <input type= "button" value="browser"><br>
-                            <br>
+                                <label for="browse">Click to upload a file/folder</label>
+                                <input type="file" onchange="showFile(this)">
+                                <script>
+                                    function showFile(input) {
+                                    let file = input.files[0];
+
+                                    alert(`File name: ${file.name}`); 
+                                    }
+                                </script>
+                                <br><br>
                             <label for="upload" >Click the next button to Upload your file(s) </label>
                             <button onclick="showAlert()"id =Upload>Upload</button>
-                        <script>
-                            function showAlert(){
+                            <script>
+                                function showAlert(){
                                 alert("File(s) Uploaded Successfully!");
-                            }
-                        </script>    
+                                }
+                            </script>    
                         </fieldset>
                             
                         </frame>
